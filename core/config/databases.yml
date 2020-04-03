@@ -1,0 +1,12 @@
+  
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:dbname=hnapttr;host=localhost;port=3308'
+      profiler: false
+      username: root
+      password: "<?php echo urlencode('') ; ?>"
+      attributes:
+        quote_identifier: true  
+  
